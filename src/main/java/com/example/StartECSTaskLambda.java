@@ -11,7 +11,7 @@ import java.util.Map;
 public class StartECSTaskLambda implements RequestHandler<Object, String> {
 
     private final String clusterName = "devcluster";
-    private final String taskDefinitionArn = "arn:aws:ecs:us-east-1:631256455463:task-definition/Java-daksh:2";
+    private final String taskDefinitionArn = "arn:aws:ecs:us-east-1:631256455463:service/devcluster/daksh-6";
 
     private final AmazonECS ecsClient = AmazonECSClientBuilder.defaultClient();
 
